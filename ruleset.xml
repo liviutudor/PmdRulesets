@@ -77,7 +77,7 @@
         <priority>4</priority>
     </rule>
     <rule ref="rulesets/java/controversial.xml/NullAssignment">
-        <priority>2</priority>
+        <priority>4</priority>
     </rule>
     <rule ref="rulesets/java/controversial.xml/SuspiciousOctalEscape">
         <priority>1</priority>
@@ -86,7 +86,7 @@
         <priority>5</priority>
     </rule>
     <rule ref="rulesets/java/controversial.xml/UseConcurrentHashMap">
-        <priority>3</priority>
+        <priority>4</priority>
     </rule>
 
     <!-- COUPLING RULES -->
@@ -94,24 +94,29 @@
         <priority>1</priority>
     </rule>
     <rule ref="rulesets/java/coupling.xml/ExcessiveImports">
-        <priority>2</priority>
+        <priority>4</priority>
     </rule>
     <rule ref="rulesets/java/coupling.xml/LooseCoupling">
-        <priority>1</priority>
+        <priority>3</priority>
     </rule>
 
     <!-- DESIGN RULES -->
     <rule ref="rulesets/java/design.xml/AbstractClassWithoutAbstractMethod">
-        <priority>1</priority>
+        <priority>3</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/AbstractClassWithoutAnyMethod">
-        <priority>1</priority>
+        <priority>3</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/AssignmentToNonFinalStatic">
         <priority>1</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/AvoidDeeplyNestedIfStmts">
         <priority>1</priority>
+        <properties>
+            <property name="problemDepth">
+                <value>4</value>
+            </property>
+        </properties>
     </rule>
     <rule ref="rulesets/java/design.xml/AvoidInstanceofChecksInCatchClause">
         <priority>1</priority>
@@ -135,7 +140,7 @@
         <priority>1</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/ConfusingTernary">
-        <priority>1</priority>
+        <priority>2</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/DefaultLabelNotLastInSwitchStmt">
         <priority>4</priority>
@@ -165,7 +170,7 @@
         <priority>5</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/NonStaticInitializer">
-        <priority>1</priority>
+        <priority>2</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/OptimizableToArrayCall">
         <priority>5</priority>
@@ -177,7 +182,7 @@
         <priority>5</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/SimpleDateFormatNeedsLocale">
-        <priority>1</priority>
+        <priority>2</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/SimplifyBooleanReturns">
         <priority>1</priority>
@@ -189,7 +194,7 @@
         <priority>1</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/SingularField">
-        <priority>1</priority>
+        <priority>4</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/SwitchDensity">
         <priority>1</priority>
@@ -201,16 +206,16 @@
         <priority>5</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/UnnecessaryLocalBeforeReturn">
-        <priority>1</priority>
+        <priority>4</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/UnsynchronizedStaticDateFormatter">
         <priority>1</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/UseCollectionIsEmpty">
-        <priority>5</priority>
+        <priority>3</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/UseLocaleWithCaseConversions">
-        <priority>5</priority>
+        <priority>3</priority>
     </rule>
     <rule ref="rulesets/java/design.xml/UseNotifyAllInsteadOfNotify">
         <priority>5</priority>
@@ -282,10 +287,10 @@
         <priority>3</priority>
     </rule>
     <rule ref="rulesets/java/strings.xml/StringToString">
-        <priority>5</priority>
+        <priority>3</priority>
     </rule>
     <rule ref="rulesets/java/imports.xml/UnusedImports">
-        <priority>2</priority>
+        <priority>4</priority>
     </rule>
 
     <!-- MIGRATION RULES -->
@@ -316,7 +321,7 @@
         <priority>1</priority>
     </rule>
     <rule ref="rulesets/java/naming.xml/AvoidFieldNameMatchingTypeName">
-        <priority>1</priority>
+        <priority>3</priority>
     </rule>
     <rule ref="rulesets/java/naming.xml/AvoidFieldNameMatchingMethodName">
         <priority>1</priority>
@@ -341,9 +346,6 @@
     <rule ref="rulesets/java/optimizations.xml/AvoidArrayLoops">
         <priority>1</priority>
     </rule>
-    <rule ref="rulesets/java/optimizations.xml/AvoidInstantiatingObjectsInLoops">
-        <priority>3</priority>
-    </rule>
     <rule ref="rulesets/java/optimizations.xml/LocalVariableCouldBeFinal">
         <priority>4</priority>
     </rule>
@@ -359,7 +361,7 @@
         <priority>4</priority>
     </rule>
     <rule ref="rulesets/java/sunsecure.xml/MethodReturnsInternalArray">
-        <priority>4</priority>
+        <priority>3</priority>
     </rule>
 
     <!-- STRING RULES -->
@@ -402,7 +404,7 @@
         <priority>1</priority>
     </rule>
     <rule ref="rulesets/java/unnecessary.xml/UselessOverridingMethod">
-        <priority>1</priority>
+        <priority>3</priority>
     </rule>
     <rule ref="rulesets/java/unnecessary.xml/UselessOperationOnImmutable">
         <priority>1</priority>
